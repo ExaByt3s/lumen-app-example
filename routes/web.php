@@ -13,5 +13,8 @@
 
 $router->get('/', function () use ($router) {
     Log::info('Boot home page');
+    if (env('APP_DEBUG')) {
+        Debugbar::debug('Boot home page');
+    }
     return view('index');
 });
