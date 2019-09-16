@@ -12,5 +12,6 @@
 */
 
 $router->get('/', function () use ($router) {
+    Log::info('Boot home page');
     return view('index');
 });
