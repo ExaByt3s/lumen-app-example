@@ -83,7 +83,7 @@ if (env('APP_DEBUG')) {
     $app->register(Barryvdh\Debugbar\LumenServiceProvider::class);
     $app->configure('app');
     $app->configure('debugbar');
-    $app->withFacades(true, ['Barryvdh\Debugbar\Facade' => 'Debugbar']);   
+    $app->withFacades(true, ['Barryvdh\Debugbar\Facade' => 'Debugbar']);
 } else {
     $app->withFacades();
 }
