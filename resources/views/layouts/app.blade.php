@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>
             @hasSection('title')
@@ -13,8 +14,9 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-dark bg-primary">
+            <nav class="navbar navbar-dark bg-dark">
                 <a class="navbar-brand" href="#">WebAnalyzer</a>
+                <a class="nav-link" href="https://github.com/Dvengroff/lumen-app-example">GitHub</a>
             </nav>
         </header>
         <main>
