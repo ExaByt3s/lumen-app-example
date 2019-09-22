@@ -7,6 +7,7 @@ use Laravel\Lumen\Testing\DatabaseTransactions;
 
 class AppTest extends TestCase
 {
+    use DatabaseMigrations;
     /**
      * A home page test.
      *
@@ -15,6 +16,12 @@ class AppTest extends TestCase
     public function testHomePage()
     {
         $this->get('/');
+        $this->assertResponseStatus(200);
+    }
+
+    public function testDbPage()
+    {
+        $this->get('/db');
         $this->assertResponseStatus(200);
     }
 }
