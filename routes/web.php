@@ -20,10 +20,5 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/db', function () use ($router) {
-    $DATABASE_URL = parse_url(getenv("DATABASE_URL"));
-    $dbconfig = [];
-    foreach ($DATABASE_URL as $k => $v) {
-        $dbconfig[] = "{$k} = {$v}";
-    }
-    return implode("<br>", $dbconfig);
+    return env("DB_CONNECTION");
 });
