@@ -7,10 +7,10 @@
                 <div class="col-md-5">
                     <h1>Анализ страницы</h1>
                     <hr class="my-3">
-                    <form>
+                    <form action="/domains" method="post">
                         <div class="form-group">
                             <label for="page-url-input">Введите URL веб-страницы:</label>
-                            <input type="text" class="form-control" id="page-url-input" placeholder="https://www.example.com" required>
+                            <input type="text" name="name" class="form-control" id="page-url-input" placeholder="https://www.example.com" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Анализировать</button>
                     </form>

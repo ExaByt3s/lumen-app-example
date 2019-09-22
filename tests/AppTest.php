@@ -24,4 +24,13 @@ class AppTest extends TestCase
         $this->get('/db');
         $this->assertResponseStatus(200);
     }
+
+    public function testDomainsStoreAndShowPage()
+    {
+        $this->post('/domains', ['name' => 'https://hexlet.io']);
+        $this->seeInDatabase('domains', ['name' => 'https://hexlet.io']);
+
+        $this->get('/domains/1');
+        $this->assertResponseStatus(200);
+    }
 }

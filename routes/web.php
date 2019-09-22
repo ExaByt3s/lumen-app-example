@@ -23,3 +23,7 @@ $router->get('/db', function () use ($router) {
     $domains = DB::select('SELECT * FROM domains');
     return implode("<br>", $domains);
 });
+
+$router->post('/domains', ['as' => 'domains.store', 'uses' => 'DomainController@store']);
+
+$router->get('/domains/{id}', ['as' => 'domains.show', 'uses' => 'DomainController@show']);

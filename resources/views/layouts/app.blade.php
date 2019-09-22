@@ -15,7 +15,7 @@
     <body>
         <header>
             <nav class="navbar navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">WebAnalyzer</a>
+                <a class="navbar-brand" href="/">WebAnalyzer</a>
                 <a class="nav-link" href="https://github.com/Dvengroff/lumen-app-example">GitHub</a>
             </nav>
         </header>
