@@ -20,5 +20,6 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/db', function () use ($router) {
-    return env("DB_CONNECTION");
+    $domains = DB::select('SELECT * FROM domains');
+    return implode("<br>", $domains);
 });
